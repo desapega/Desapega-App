@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "desapega": {
+    "desapegaApp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/desapega",
+            "outputPath": "dist/desapega-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -30,12 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeflex/primeflex.css"
-              
-
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -70,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "desapega:build:production"
+              "browserTarget": "desapegaApp:build:production"
             },
             "development": {
-              "browserTarget": "desapega:build:development"
+              "browserTarget": "desapegaApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "desapega:build"
+            "browserTarget": "desapegaApp:build"
           }
         },
         "test": {
