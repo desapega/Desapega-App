@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+
+    mat-divider{
+        border: gray 5px;
+    }
+    
+    .leftside{
+        width: 50%;
+    }
+    
+    .rightside{
+        width: 50%;
+        justify-content: end;
+        align-items: end;
+        
+        .politicy{
+            display: flex;
+            justify-content: end;
+            align-self: center;
+        }
+
+        .medias{
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
