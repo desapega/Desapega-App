@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
 import { Routes } from "@angular/router";
-import { ProductsComponent } from "./product/products/products.component";
+import { ProductComponent } from "./product/product.component";
 
 
 export const productsRoutes: Routes = [
     {
       path: "products",
-      component: ProductsComponent,
+      component: ProductComponent,
       title: "Produtos",
     }
 ]
